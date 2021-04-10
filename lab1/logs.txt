@@ -1,0 +1,20 @@
+21:52:01 - INFO - Server listens on port 8000
+
+21:52:09 - INFO - Request: GET, Response: 202 Path: /?path=meow.png IP client:127.0.0.1
+21:52:12 - INFO - Request: GET, Response: 404 Path: /?path=meow1.png IP client:127.0.0.1
+21:56:19 - INFO - Request: GET, Response: 404 Path: /?path=meow1.png IP client:127.0.0.1
+21:56:19 - INFO - Request: GET, Response: 202 Path: /?path=meow.png IP client:127.0.0.1
+22:01:24 - INFO - Stopping server
+
+22:01:25 - INFO - Server listens on port 8000
+
+22:01:28 - INFO - Request: GET, Response: 202 Path: /?path=kitten.jpg IP client:127.0.0.1
+22:01:28 - INFO - Request: GET, Response: 202 Path: /?path=doge.jpg IP client:127.0.0.1
+22:01:28 - INFO - Request: GET, Response: 202 Path: /?path=monkey.jpg IP client:127.0.0.1
+22:01:28 - INFO - Request: GET, Response: 404 Path: /?path=not_found.png IP client:127.0.0.1
+22:02:04 - INFO - Request: GET, Response: 202 Path: /?path=kitten.jpg IP client:127.0.0.1
+22:02:04 - INFO - Request: GET, Response: 202 Path: /?path=doge.jpg IP client:127.0.0.1
+22:02:11 - INFO - Request: GET, Response: 202 Path: /?path=kitten.jpg IP client:127.0.0.1
+22:02:11 - INFO - Request: GET, Response: 202 Path: /?path=doge.jpg IP client:127.0.0.1
+22:02:11 - INFO - Request: GET, Response: 202 Path: /?path=monkey.jpg IP client:127.0.0.1
+22:02:11 - INFO - Request: GET, Response: 404 Path: /?path=not_found.png IP client:127.0.0.1
