@@ -79,7 +79,7 @@ function w3_close() {
 }
 
 function randomImg(){
-  const images = ["kitten.jpg", "doge.jpg", "monkey.jpg"];
+  const images = ["kitten.jpg", "doge.jpg", "monkey.jpg", "not_existing_image.png"];
   const random = Math.floor(Math.random() * images.length);
   $('#change-image').attr('src',`http://localhost:8000/?path=${images[random]}`);
   $('#randName').html("http://localhost:8000/?path="+images[random]);
