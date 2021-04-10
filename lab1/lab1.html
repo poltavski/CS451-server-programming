@@ -9,6 +9,9 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 </style>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 <body>
 
 <!-- Sidebar (hidden by default) -->
@@ -50,6 +53,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
   </div>
 
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div id="ownImg">Go with your own image path</div>
+    <button class="random-image button-container" onclick="randomImg()">Change random image button!</button>
+    <div>random image is:
+      <div id="randName"></div>
+    </div>
+
+    <img id="change-image" width="600" src="http://localhost:8000/?path=not_found.png" alt="Random Image" />
+</div>
+
 
 <!-- End page content -->
 </div>
@@ -59,10 +72,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
 }
+
  
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
+
+function randomImg(){
+  const images = ["kitten.jpg", "doge.jpg", "monkey.jpg"];
+  const random = Math.floor(Math.random() * images.length);
+  $('#change-image').attr('src',`http://localhost:8000/?path=${images[random]}`);
+  $('#randName').html("http://localhost:8000/?path="+images[random]);
+};
+
+
+$(document).ready(function(){
+
+
+   // your code goes here
+
+
+});
 </script>
 
 </body>
